@@ -28,7 +28,6 @@ jobs:
       - name: Buildx
         uses: docker/build-push-action@v2
         with:
-          context: ${{ env.IMAGE_NAME }}
           file: ./Dockerfile
           platforms: linux/s390x
           push: true
